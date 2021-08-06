@@ -12,7 +12,9 @@ if( !$current_user->ID || !$current_user->has_cap('wpsc_agent') ) return;
 if (($agent_permissions['label'] == 'Administrator') || ($agent_permissions['label'] == 'Agent'))
 {
 ?>
-<span onclick="wpsc_get_canned_reply()" >Canned Reply</span>
+<!--PATT BEGIN -->
+<a href="#" onclick="wpsc_get_canned_reply()" style="color:#1d4289; text-decoration: underline;">Canned Reply</a>
+<!--PATT END -->
 <?php } ?>
 <script>
 function wpsc_get_canned_reply(){  
